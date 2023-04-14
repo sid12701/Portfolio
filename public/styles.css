@@ -1,0 +1,61 @@
+*{
+    font-family: 'Chivo Mono', monospace;
+}
+
+.header{
+    background-color: #18122B;
+}
+
+.content{
+    height: 200px;
+    width: 100%;
+    margin-top: 100px;
+    font-weight: 500 !important;
+    color: white;
+}
+
+
+
+body{
+    text-align: center;
+    margin: auto;
+    background-color: white;
+}
+
+
+.message-box{
+    color:white;
+    margin: 100px 0 0 600px;
+    height: 100px;
+    width: 300px;
+    padding: 10px;
+    border-style: solid;
+    border-width: 3px;
+    box-shadow: 
+    10px -10px 0 -3px black,
+    10px -10px,
+    20px -20px 0 -3px black,
+    20px -20px;
+    transition: box-shadow 0.5s, top 0.5s, left 0.5s;
+    top: 0;
+    left: 0;
+}
+
+
+.message-box:hover{
+    top: -20px;
+    left: 20px;
+    border-style: solid;
+    border-width: 3px;
+    box-shadow: 
+    0 0 0 -3px black,
+    0 0,
+    0 0 0 -3px black,
+    0 0;
+    
+}
+
+
+h2,p{
+    color: #00000;
+}
