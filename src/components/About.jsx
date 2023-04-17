@@ -1,18 +1,22 @@
-import React from 'react';
+import React from "react";
 
-function About(){
-    return(
-        <div>
-            <h3></h3>
-            <p>As a beginner full stack web developer with no experience, I am highly motivated to learn and grow in this exciting field. I have a passion for creating innovative and dynamic web applications that engage and delight users.
-
-I am proficient in a range of technologies, including HTML, CSS, JavaScript, and various web development frameworks. I am constantly expanding my knowledge and skills through self-learning, online courses, and working on personal projects.
-
-While I may not have years of professional experience under my belt, I bring a fresh perspective and a willingness to tackle challenges head-on. I am a team player who enjoys collaborating with others to bring ideas to life, and I thrive in fast-paced environments where I can continuously learn and improve.
-
-With my dedication, enthusiasm, and commitment to quality, I am confident that I can make valuable contributions to any team and help to create exceptional web applications that make a positive impact on users' lives.</p>
-        </div>
-    )
+function About() {
+  return (
+    <div className="about" id="about">
+    <h3 class="text-center  py-4">About me</h3>
+    <div class="container">
+      <p>
+        A beginner full stack web developer with a passion for creating
+        innovative web applications and proficiency in various technologies,
+        seeking to continuously expand knowledge and skills through
+        self-learning and personal projects. A team player who enjoys
+        collaborating with others to bring ideas to life, and thrives in
+        fast-paced environments. Confident in making valuable contributions to
+        any team and creating exceptional web applications.
+      </p>
+      </div>
+    </div>
+  );
 }
 
 export default About;
