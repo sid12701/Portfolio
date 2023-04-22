@@ -56,7 +56,7 @@ const Body = () => {
             A portfolio website made with Bootstrap, React, HTML, CSS and JavaScript
           </p>
           <a
-            href="h"
+            href=""
             class="btn btn-primary"
           >
             Source Code
