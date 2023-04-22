@@ -22,23 +22,23 @@ function Navbar() {
                 <a
                   class="nav-link active text-white"
                   aria-current="page"
-                  href="#"
+                  href="#1"
                 >
                   Home
                 </a>
               </li>
               <li class="nav-item">
-                <a class="nav-link text-white" href="#projects">
+                <a class="nav-link text-white" href="#2">
+                About Me
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-white" href="#3">
                   Projects
                 </a>
               </li>
               <li class="nav-item">
-                <a class="nav-link text-white" href="#contact">
-                  Contact Me
-                </a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link disabled text-white" href="#about">About Me</a>
+                <a class="nav-link  text-white" href="#4">Contact Me</a>
               </li>
             </ul>
           </div>

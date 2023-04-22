@@ -1,54 +1,40 @@
-import React, {useState} from "react";
-import LinkedInIcon from '@mui/icons-material/LinkedIn';
-import EmailIcon from '@mui/icons-material/Email';
-import GitHubIcon from '@mui/icons-material/GitHub';
+import React from 'react';
+import { MDBInput, MDBCheckbox, MDBBtn,MDBTextArea } from 'mdb-react-ui-kit';
+import { useState, useRef } from 'react';
+import emailjs from '@emailjs/browser';
 
+export default function Contact() {
+  const form = useRef();
 
-function Contact() {
+  const sendEmail = (e) => {
+    e.preventDefault();
 
-    
-  // const [email,setEmail] = useState("");
-  // function sendEmail(event){
-  //   const body = event.target.value;
-  //   setEmail(click => {
-  //       Email.send({
-  //           Host:"smtp.gmail.com",
-            
-  //       })
-  //   });
-
-  // }
+    emailjs.sendForm('service_fhg86u6', 'template_3evwkg9',form.current, '3eoMa6MzGJkNqdA3d')
+      .then((result) => {
+          console.log(result.text);
+          e.target.reset();
+      }, (error) => {
+          console.log(error.text);
+      });
+  };
 
   return (
-    <div className="contact">
-    <h3>Feel free to Contact Me</h3>
+    <div class="container-fluid d-flex justify-content-center contact" id="4">
+    <form ref={form} className='text-center' onSubmit={sendEmail} style={{ width: '100%', maxWidth: '300px' }}>
+      <h2>Contact Me</h2>
 
-    <div>
-    <form action="mailto:siddhantdaryanani@gmail.com">
-      <div class="row mb-3">
-        <label for="inputEmail3" class="col-sm-2 col-form-label">
-          Email
-        </label>
-        <div class="col-sm-10">
-          <input type="email" class="form-control" id="inputEmail3" />
-        </div>
-      </div>
-      <div class="row mb-3">
-        <label for="inputPassword3" class="col-sm-2 col-form-label">
-            Message
-        </label>
-        <div class="col-sm-10">
-          <input type="text" class="form-control" id="inputPassword3"/>
-        </div>
-      </div>
-     
-      <button type="submit" class="btn btn-primary">
-        Submit
-      </button>
-    </form>     
-    </div>
+      <MDBInput label='Name' v-model='name' wrapperClass='mb-4' name="user_name" />
+
+      <MDBInput type='email' label='Email address' v-model='email' name="user_email" wrapperClass='mb-4' />
+
+
+      <MDBTextArea wrapperClass='mb-4' label='Message' name="message" />
+
+
+      <MDBBtn color='primary' block className='my-4' value="Send" type="submit">
+        Send
+      </MDBBtn>
+    </form>
     </div>
   );
 }
-
-export default Contact;

@@ -2,7 +2,7 @@ import React from "react";
 import Navbar from "./Navbar";
 const Header = () => {
   return (
-    <div className="header">
+    <div className="header" id="1">
       <Navbar />
       <div class="message-box text-center">
         <h2 class="title">Hello my name is:Siddhant</h2>
