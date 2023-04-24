@@ -1,6 +1,7 @@
 import React from "react";
 import keeper from "../images/keeper-app.jpg";
 import blog from "../images/blog.jpg";
+import Portfolio from "../images/portfolio.jpg";
 const Body = () => {
   return (
     <div className="display " id="3">
@@ -20,7 +21,7 @@ const Body = () => {
             Website Link
           </a>
           <a
-            href="https://github.com/sid12701/keeper-apps"
+            href="https://github.com/sid12701/keeper-app"
             class="btn btn-primary"
           >
             Source Code
@@ -38,7 +39,7 @@ const Body = () => {
             href=""
             class="btn btn-primary me-2"
           >
-            Website Link
+            <a href="https://myblogpost-jw7q.onrender.com/" class="text-white">Website Link</a>
           </a>
           <a
             href="h"
@@ -49,7 +50,7 @@ const Body = () => {
         </div>
         </div>
         <div class="card">
-        <img src={blog} class="card-img-top" alt="..." />
+        <img src={Portfolio} class="card-img-top" alt="..." />
         <div class="card-body">
           <h5 class="card-title">Portfolio Website</h5>
           <p class="card-text">
@@ -59,7 +60,7 @@ const Body = () => {
             href=""
             class="btn btn-primary"
           >
-            Source Code
+            <a href="https://github.com/sid12701/portfolio" class="text-white">Source Code</a>
           </a>
         </div>
         </div>
