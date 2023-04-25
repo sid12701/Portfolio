@@ -1,4 +1,5 @@
 import React from "react";
+import Resume from "../assests/Siddhant_Resume.pdf";;
 
 function Navbar() {
   return (
@@ -39,6 +40,9 @@ function Navbar() {
               </li>
               <li class="nav-item">
                 <a class="nav-link  text-white" href="#4">Contact Me</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link  text-white" href={Resume} download="Resume">Resume</a>
               </li>
             </ul>
           </div>

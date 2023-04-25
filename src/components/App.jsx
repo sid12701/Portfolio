@@ -4,7 +4,7 @@ import Header from './Header';
 import About from './About';
 import Contact from './Contact';
 import Footer from './Footer';
-
+import Card from './Card';
 // window.addEventListener('scroll', () => {
 //   const section1 = document.getElementById('1');
 //   const section2 = document.getElementById('2');
