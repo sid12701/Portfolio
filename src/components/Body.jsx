@@ -5,7 +5,7 @@ import Portfolio from "../images/portfolio.jpg";
 import Card from "./Card";
 const Body = () => {
   return (
-    <Card></Card>
+    <Card id="3"></Card>
 
   );
 };

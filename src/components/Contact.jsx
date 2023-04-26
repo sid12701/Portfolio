@@ -34,6 +34,8 @@ export default function Contact() {
       <MDBBtn color='primary' block className='my-4' value="Send" type="submit">
         Send
       </MDBBtn>
+      <p className='c'> Please don't hesitate to contact me in case you have any inquiries or opportunities to discuss.</p>
+
     </form>
     </div>
   );

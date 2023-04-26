@@ -5,6 +5,7 @@ import Portfolio from "../images/portfolio.jpg";
 
 const Card = () => {
   return (
+    <div id="3">
     <div id="carouselExample" class="carousel slide">
     <div class="carousel-inner">
       <div class="carousel-item active">
@@ -41,6 +42,7 @@ const Card = () => {
       <span class="carousel-control-next-icon" aria-hidden="true"></span>
       <span class="visually-hidden">Next</span>
     </button>
+  </div>
   </div>
   )
 }
